@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inducción General</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">LOGO</div>
+  <h1>Inducción General de Seguridad</h1>
+  <p>Capacitación y evaluación online</p>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>Bienvenido/a</h2>
+    <p>
+      Complete sus datos, revise el contenido de inducción y responda la evaluación final.
+    </p>
+  </section>
+
+  <form id="formInduccion">
+    <section>
+      <h2>Datos del participante</h2>
+
+      <div class="grid">
+        <div>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" required />
+        </div>
+
+        <div>
+          <label for="rut">RUT / DNI</label>
+          <input type="text" id="rut" required />
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" required />
+        </div>
+
+        <div>
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" required />
+        </div>
+
+        <div>
+          <label for="cargo">Cargo / Función</label>
+          <input type="text" id="cargo" required />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contenido de inducción</h2>
+
+      <div class="modulo">
+        <h3>1. Normas generales</h3>
+        <p>
+          Respete las instrucciones del personal autorizado y transite solo por zonas permitidas.
+        </p>
+      </div>
+
+      <div class="video-box">
+        Espacio para video de inducción
+      </div>
+
+      <div class="modulo">
+        <h3>2. Elementos de protección personal</h3>
+        <p>
+          Use casco, calzado de seguridad, lentes u otros elementos cuando corresponda.
+        </p>
+      </div>
+
+      <div class="modulo">
+        <h3>3. Emergencias</h3>
+        <p>
+          En caso de emergencia, avise al encargado y siga las rutas señalizadas.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Evaluación final</h2>
+
+      <div id="contenedorPreguntas"></div>
+    </section>
+
+    <section class="acciones">
+      <button type="submit">Enviar evaluación</button>
+      <div id="resultado"></div>
+    </section>
+  </form>
+</main>
+
+<footer>
+  Plataforma de inducción - Versión demostrativa
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
